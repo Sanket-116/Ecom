@@ -1,0 +1,209 @@
+body {
+    background-color: #D3CDCD;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+
+}
+
+video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+.navi {
+    background-color: rgb(131, 129, 129);
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.navi a {
+    float: left;
+    color: rgb(15, 23, 23);
+    text-align: center;
+    margin-left: 5px;
+    padding: 11px 33px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 10%;
+    letter-spacing: 2px;
+}
+
+.navi a:hover {
+    background-color: #16ddd3;
+
+}
+
+.navi a.active {
+    background-color: rgb(217, 218, 223);
+}
+
+h1 {
+    letter-spacing: 1.5px;
+    word-spacing: 5px;
+    font-size: 70px;
+    text-align: center;
+}
+
+.his {
+    font-size: 39px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    text-align: center;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.kota {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    height: 700px;
+    display: block;
+    box-shadow: 0px 0px 60px #f3de64;
+    border-radius: 8px;
+}
+
+
+.dropbtn {
+    background-color: #838181;
+    color: rgb(0, 0, 0);
+    padding-left: 8px;
+    padding-right: 8px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 10%;
+}
+
+.drop {
+    
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+}
+
+.drop-content {
+    display: none;
+    position: absolute;
+    background-color: #838181;
+}
+
+.drop-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.drop-content a:hover {
+    background-color: #16ddd3;
+}
+
+
+.drop:hover .drop-content {
+    display: block;
+}
+
+.drop:hover .dropbtn {
+    background-color: rgb(131, 129, 129);
+}
+
+.slid {
+    width: 700px;
+    position: relative;
+    transform: translate(-50%, -50%);
+    margin-top: 30%;
+    margin-left: 50%;
+    overflow: hidden;
+    border: 10px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: -1px 5px 15px black;
+}
+
+/*Area of images*/
+.wrapper {
+    width: 700px;
+    display: flex;
+
+    animation: slide 10s infinite;
+}
+
+.wrapper img {
+    width: 700px;
+}
+
+/*Animation activated by keyframes*/
+@keyframes slide {
+
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    55% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-200%);
+    }
+
+    80% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+.creat {
+    margin-left: 30%;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    float: left;
+    position: absolute;
+
+}
+
+#clock {
+    font-size: 450%;
+    font-family: 'Courier New', Courier, monospace;
+    width: 700px;
+    margin: auto;
+    text-align: center;
+    border: 5px solid #16ddd3;
+    background-color: #b1adad;
+    border-radius: 20px;
+
+}
+
+#clock :hover{
+    background-color: #16ddd3;
+}

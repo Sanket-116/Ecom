@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headache</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <video width="300px" autoplay muted playsinline onmouseover="this.play()">
+        <source src="lolo.mp4" type="video/mp4">
+    </video>
+
+    <div class="navi">
+        <a class="active" href="#">Home</a>
+        <a href="about copy.html">About</a>
+        <a href="History.html">Heritage</a>
+        <a href="institu.html">Instituitions</a>
+        <a href="#">Gov.facilities</a>
+        <div class="drop">
+            <button class="dropbtn"><img src="Untitled design.gif " width="37px" alt=""></button>
+            <div class="drop-content">
+                <a href="#">contact</a>
+                <a href="#">lifestyle</a>
+                <a href="#">Food<tab></tab>places</a>
+                <a href="#">Tourisum</a>
+
+            </div>
+        </div>
+    </div>
+
+    <h1 style="font-family: 'Courier New', Courier, monospace;">KOTA city of seven wonders </h1>
+    <div id="clock">08:11:00</div>
+    <div class="slid">
+        <div class="wrapper">
+            <img src="1.jpg" alt="">
+            <img src="2.jpg" alt="">
+            <img src="3.jpg" alt="">
+            <img src="4.jpg" alt="">
+            <img src="5.jpg" alt="">
+            <img src="6.jpg" alt="">
+        </div>
+
+    </div>
+    
+    <script>setInterval(showTime, 1000);
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            am_pm = "AM";
+         
+            if (hour > 12) {
+                hour -= 12;
+                am_pm = "PM";
+            }
+            if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+            }
+         
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+         
+            let currentTime = hour + ":"
+                    + min + ":" + sec + am_pm;
+         
+            document.getElementById("clock")
+                    .innerHTML = currentTime;
+        }
+        showTime();
+        </script>
+</body>
+
+</html>
